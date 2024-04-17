@@ -8,16 +8,9 @@ use Ramsey\Uuid\Uuid;
 class FilenameGenerator
 {
 
-    public function uuid(string $filename): string
+    public function uuid(): string
     {
-        $extension = $this->getExtension($filename);
-        $uuid = Uuid::uuid4()->toString();
-
-        return "$uuid.$extension";
+        return Uuid::uuid4()->toString();
     }
 
-    private function getExtension(string $filename): string
-    {
-        return pathinfo($filename, PATHINFO_EXTENSION);
-    }
 }
