@@ -1,0 +1,22 @@
+{
+    "name": "zenithsu/cloud-uploader",
+    "description": "Universal Cloud Storage Uploader is a PHP package enabling easy file uploads to multiple cloud services including Alibaba Cloud OSS, Qiniu, Tencent Cloud, and Google Cloud. It provides a simple, unified API for streamlined integration and management.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zenith\\CloudUploader\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ZenithSu",
+            "email": "happy@hacking.icu"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "aliyuncs/oss-sdk-php": "^2.7",
+        "ramsey/uuid": "^4.7"
+    }
+}
